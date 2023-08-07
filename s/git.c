@@ -21,6 +21,10 @@ void git_commits()
 	printf("upd <<name>> ");
 	printf("data time ");
 	printf("- for save after add new function\n");
+
+	printf("err <<name>> ");
+	printf("data time ");
+	printf("- for save in place with error\n");
 }
 
 void git()
