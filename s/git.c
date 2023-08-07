@@ -60,4 +60,27 @@ void git_init()
 	printf("<git remote add origin git@github.com:your_login/repository_name.git> - .\n");
 	printf("<git push -u origin main> - upload on git.hub.\n");
 	printf("This is all. You can use git.\n");
+
+	printf("Add 1. command for change text editor for commits in git:\n	git config --global core.editor \"gedit -w\"");
+}
+
+void git_ssh()
+{
+	prt_ln();
+	printf("Error with git push!\n");
+	printf("If we started git repo in new PC/OS, need add new ssh key.\n");
+	printf("<ssh-agent -s> you can see next mess - <echo Agent pid 6344;>\n");
+	printf("<ssh-add -l -E sha256> i not remember. Do it.\n");
+	printf("<ssh-keygen -t ed25519 -C \"your_email@example.com\"> next. You need generate key.\n");
+	printf("Programm ask you. Name of file? You can tap Enter.\nNext ask. Password phrase? Tap Enter and go mext.\n");
+	printf("You can see path on your new key:\n/home/user/.ssh/id_ed25519\n");
+	printf("\nNext step: we need wake ssh-agent.\n");
+	printf("<eval \"$(ssh-agent -s)\"> - wake command. Send you next messege <Agent pid XXXX(Your PID)>\n");
+	printf("<ssh-add ~/.ssh/id_ed25519> this commang add ssh-key.\n");
+	printf("After this you need open git-hub and sign in.\n");
+	printf("Go to \"settings...\"\n");
+	printf("Go to SSH and GPG keys.\n");
+	printf("Push button \"new SSH key\"\n");
+	printf("Next copy your ssh key from path in key-gen command.\n For example: /home/.ssh/id_ed25519.pub\n");
+	printf("After save you can try use git push\n");
 }

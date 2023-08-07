@@ -1,6 +1,6 @@
 void abbreviare_1()
 {
-	printf("\n________________________________\n");
+	prt_ln();
 	printf("Part 1\n");
 	printf("add  - address\n");
     printf("accs - access * dostup\n");
@@ -40,7 +40,7 @@ void abbreviare_1()
 
 void abbreviare_2()
 {
-	printf("\n________________________________\n");
+	prt_ln();
 	printf("Part 2\n");
 	printf("glb  - (glob) global\n");
     printf("gnd  - ground\n");
@@ -80,7 +80,7 @@ void abbreviare_2()
 
 void abbreviare_3()
 {
-	printf("\n________________________________\n");
+	prt_ln();
 	printf("Part 3\n");
 	printf("open - \n");
     printf("out  - \n");
@@ -120,7 +120,7 @@ void abbreviare_3()
 
 void abbreviare_4()
 {
-	printf("\n________________________________\n");
+	prt_ln();
 	printf("Part 4\n");
 	printf("stat - status\n");
     printf("srv  - server\n");

@@ -21,7 +21,7 @@ BYTE clr_flag(BYTE *byte, BYTE pos)
 
 void verification_conditions()
 {
-	printf("________________________________\n");
+	prt_ln();
 	i = 5;
 	printf("i = 5\n");
 	printf("while (i) {printf(\"i = %%d - this TRUE\",i); i--;}\n");
@@ -51,7 +51,7 @@ void verification_conditions()
 
 void bit_mask()
 {
-	printf("________________________________\n");
+	prt_ln();
 	b_1 = 2;
 	printf("\nread flag\nb_1 = %d, b_1 = 00000010\n",b_1);
 	b_2 = 1;
@@ -76,7 +76,7 @@ void bit_mask()
 
 void bit_value()
 {
-	printf("________________________________\n");
+	prt_ln();
 	a = 2;
 	b = 4;
 	printf("a(%d) >> 1 = %d\n",a,a>>1);
@@ -105,7 +105,7 @@ void bit_value()
 
 void byte_move()
 {
-	printf("\n\n________________________________\n");
+	prt_ln();
 	i = 0x68;
 	printf("i = 0x%x(01101000)\n",i);
 	i = i >> 3;

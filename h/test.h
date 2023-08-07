@@ -36,15 +36,19 @@ int  prog();
 void pointer_with_funx();
 void pointer_double();
 void structure();
+
 void git_commits();
 void git();
 void git_init();
 void git_connect();
+void git_ssh();
 
 void abbreviare_1();
 void abbreviare_2();
 void abbreviare_3();
 void abbreviare_4();
+
+void prt_ln();
 
 BYTE give_flag	(BYTE  byte, BYTE pos);
 BYTE set_flag	(BYTE* byte, BYTE pos);

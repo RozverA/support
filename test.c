@@ -42,11 +42,14 @@ void main ()
 			case 51:
 				git_init();
 			break;
+			case 511:
+				git_ssh();
+			break;
 			case 52:
 				git_commits();
 			break;
 			case 100:
-				printf("\n________________________________\n");
+				prt_ln();
 				printf("%%u - unsigned integer\n");
 				printf("%%x - hexadecimal value\n");
 				printf("%%p - void pointer\n");	
@@ -64,12 +67,12 @@ void main ()
 				abbreviare_4();
 			break;
 			case 102:
-				printf("\n________________________________\n");
+				prt_ln();
 				printf("gcc test.c -o test\n");
 				printf("x86_64-w64-mingw32-gcc -o test.exe test.c\n");
 			break;
 			case 1091:
-				printf("\n________________________________\n");
+				prt_ln();
 				system("x86_64-w64-mingw32-gcc -o support.exe test.c");
 				printf("Compille finish!\n");
 			break;
@@ -80,11 +83,14 @@ void main ()
 	}
 }
 
-
+void prt_ln()
+{
+	printf("\n_______________________________________________PART_________________________________________________\n");
+}
 
 void structure()
 {
-	printf("________________________________\n");
+	prt_ln();
 	printf("Structure\n\n");
 	
 	printf("in header file\n");

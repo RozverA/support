@@ -1,7 +1,7 @@
 int prog()
 {
 	int fork;
-	printf("________________________________\n");
+	prt_ln();
 	printf("\n0 - Exit.\n");
 	printf("1 - Byte operations.\n");
 	printf("	12 - Byte mask operation.\n");
@@ -14,6 +14,7 @@ int prog()
 	printf("4 - comparison operations(Empty)\n");
 	printf("5 - Git\n");
 	printf("	51 - Git init\n");
+	printf("		511 - On new OS/PC need add new SSH key\n");
 	printf("	52 - Git commits\n");
 	printf("100 - printf help.\n");
 	printf("Popular abbreviare:\n");

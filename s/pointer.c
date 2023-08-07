@@ -1,4 +1,3 @@
-#include "../h/test.h"
 
 int i,j,a,b;
 BYTE b_1, b_2, b_3;
@@ -15,7 +14,7 @@ void f2(int* dst,int* src,int len)
 
 void pointer_with_funx()
 {
-	printf("________________________________\n");
+	prt_ln();
 	printf("Pointers with funx:\n");
 	a = 11;
 	int* p = &a;
@@ -43,7 +42,7 @@ void pointer_with_funx()
 
 void pointer_double()
 {
-	printf("________________________________\n");
+	prt_ln();
 	printf("Pointers double definition:\n");
 	a = 0;
 	int* p = &a;
@@ -65,7 +64,7 @@ void pointer_double()
 
 void pointer()
 {
-	printf("________________________________\n");
+	prt_ln();
 	printf("Pointers definition:\n");
 	int* p;
 	a = 1;
