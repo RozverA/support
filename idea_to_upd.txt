@@ -1,0 +1,12 @@
+syntaxys <+=>
+
+define
+define "." "->"
+
+enum
+
+alloc malloc??
+
+compiller tag
+
+pattern
