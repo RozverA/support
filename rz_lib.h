@@ -12,4 +12,6 @@ typedef unsigned int    DWORD;
 #define LEN_ERR         101
 #define SIDE_ERR        102
 
-extern num_to_byte(DWORD num, BYTE len, BYTE* dst, BYTE side)
+#define SUCCES          0
+
+extern BYTE num_to_byte(DWORD num, BYTE len, BYTE* dst, BYTE side);

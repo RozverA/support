@@ -12,11 +12,3 @@ BYTE num_to_byte(DWORD num, BYTE len, BYTE* dst, BYTE side) //
     }
     return SUCCES;
 }
-
-/*
-DWORD len_write(DWORD* ptr_cnt, DWORD len)
-{
-	for (BYTE i = 0; i < 4; i++)	{ssh.messege[*ptr_cnt] = len >> (24 - (i * 8)); *ptr_cnt += 1;}
-	return (*ptr_cnt);
-}
-*/
