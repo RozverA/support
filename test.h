@@ -7,11 +7,11 @@
 #define menu_abriv 		4
 #define menu_cmd 		5
 
-typedef unsigned char  BYTE;
-typedef unsigned short WORD;
-typedef unsigned int   DWORD;
+typedef unsigned char  	BYTE;
+typedef unsigned short 	WORD;
+typedef unsigned int   	DWORD;
 
-#define err_no 200
+#define err_no 			200
 
 #include <string.h>
 #include <stdlib.h>
@@ -25,6 +25,8 @@ typedef unsigned int   DWORD;
 #include "git.c"
 #include "abr.c"
 #include "cmd.c"
+#include "rz_lib.h"
+#include "rz_lib.c"
 
 
 

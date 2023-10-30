@@ -1,7 +1,16 @@
 #include "test.h"
 
+
 void main ()
 {
+BYTE buf[10];
+DWORD alfa = 50510;
+num_to_byte(alfa,DW_LEN,&buf[0],L_SIDE);
+for(int i = 0; i < 10; i++) {printf("N %d - %d\n", i, buf[i]);}
+DWORD omega = num_aus_byte(DW_LEN, &buf[0], L_SIDE);
+printf("\nOmega = %d", omega);
+
+
 	while(1)
 	{
 		BYTE ch = 1;

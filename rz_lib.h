@@ -1,13 +1,16 @@
+#ifndef RZ_LIB_H_
+#define RZ_LIB_H_
+
 typedef unsigned char   BYTE;
 typedef unsigned short  WORD;
 typedef unsigned int    DWORD;
 
 #define BYTE_LEN        1
-#define WORD_LEN        2
-#define DWORD_LEN       4
+#define W_LEN           2
+#define DW_LEN          4
 
-#define LEFT_SIDE       1 //1234 - 1.2.3.4
-#define RIGHT_SIDE      0 //1234 - 4.3.2.1
+#define L_SIDE          1 //1234 - 1.2.3.4
+#define R_SIDE          0 //1234 - 4.3.2.1
 
 #define LEN_ERR         101
 #define SIDE_ERR        102
@@ -15,3 +18,6 @@ typedef unsigned int    DWORD;
 #define SUCCES          0
 
 extern BYTE num_to_byte(DWORD num, BYTE len, BYTE* dst, BYTE side);
+extern DWORD num_aus_byte(BYTE len, BYTE* src, BYTE side);
+
+#endif //RZ_LIB_H
