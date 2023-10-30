@@ -2,9 +2,9 @@ typedef unsigned char   BYTE;
 typedef unsigned short  WORD;
 typedef unsigned int    DWORD;
 
-#define BYTE_LEN        0
-#define WORD_LEN        1
-#define DWORD_LEN       3
+#define BYTE_LEN        1
+#define WORD_LEN        2
+#define DWORD_LEN       4
 
 #define LEFT_SIDE       1 //1234 - 1.2.3.4
 #define RIGHT_SIDE      0 //1234 - 4.3.2.1
