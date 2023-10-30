@@ -46,7 +46,7 @@ int prog(int menu)
 		case menu_cmd:
 			printf("1 - printf help.\n");
 			printf("2 - help manual compille.\n");
-			printf("cmd 1091 - compille to exe(only on linux).\n");
+			printf("cmd 109 - compille to exe(only on linux).\n");
 			printf("0 - Back to main menu\n");
 		break;
 		default:
