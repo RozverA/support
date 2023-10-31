@@ -20,4 +20,9 @@ typedef unsigned int    DWORD;
 extern BYTE num_to_byte(DWORD num, BYTE len, BYTE* dst, BYTE side);
 extern DWORD num_aus_byte(BYTE len, BYTE* src, BYTE side);
 
+/*exaple deffunx
+#define ssh_len_w(num, dst)		(num_to_byte(num, DW_LEN, dst, L_SIDE))
+#define ssh_len_r(src)			(num_aus_byte(DW_LEN, src,L_SIDE))
+*/
+
 #endif //RZ_LIB_H
