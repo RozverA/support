@@ -66,20 +66,20 @@ void git_init()
 {
 	printf("\n________________________________\n");
 	printf("<sudo apt install git> - install on linux.\n");
-	printf("On windows you need download exe file on PC\n");
+	printf("On windows you need download exe file on PC\n\n");
 	printf("<git --version> - check install.\n");
 	printf("<git config --global user.name  \"Your name\"> - enter your nickname\n");
 	printf("<git config --global user.email \"Your email\"> - enter your email\n");
 	printf("<git config  user.name  > - check your nickname\n");
-	printf("<git config  user.email > - check your email\n");
-	printf("<Next, you need open folder with files for tracking and open terminal (git BASH in windows)\n");
+	printf("<git config  user.email > - check your email\n\n");
+	printf("<Next, you need open folder with files for tracking (place with programm) and open terminal (git BASH in windows)\n\n");
 	printf("<git init> - this will crate local git repository.\n");
-	printf("<git status> - Check in any incomprehensible situation.\n");
+	printf("<git status> - Check in any incomprehensible situation.\n\n");
 	printf("	<git add .> - add all files on floder.\n");
 	printf("	<git add file_name.extention> - add one file.\n");
 	printf("	<git add name_folder/.> - add all files on another folder.\n");
 	printf("or  <cd name_folde>r - go to folder.\n");
-	printf("	<git add .> - and add all files.\n");
+	printf("	<git add .> - and add all files.\n\n");
 	printf("<git status> - you can see all adding files.\n");
 	printf("<git rm --cached name_file.exptention> - delete file from tracking.\n");
 	printf("<git commit -m \"init\"> - your first commit.\n");
@@ -96,20 +96,23 @@ void git_init()
 void git_ssh()
 {
 	prt_ln();
-	printf("Error with git push!\n");
-	printf("If we started git repo in new PC/OS, need add new ssh key.\n");
+	printf("If we create git repo in new PC/OS, need add new ssh key.\n");
+	printf("GEN KEY");
 	printf("<ssh-agent -s> you can see next mess - <echo Agent pid 6344;>\n");
-	printf("<ssh-add -l -E sha256> i not remember. Do it.\n");
-	printf("<ssh-keygen -t ed25519 -C \"your_email@example.com\"> next. You need generate key.\n");
+	printf("<ssh-add -l -E sha256> list with your keys\n]n");
+	printf("<ssh-keygen -t ed25519 -C \"your_email@example.com\"> next. You need generate key.\n\n");
 	printf("Programm ask you. Name of file? You can tap Enter.\nNext ask. Password phrase? Tap Enter and go mext.\n");
 	printf("You can see path on your new key:\n/home/user/.ssh/id_ed25519\n");
+	printf("WAKE UP SSH AGENT");
 	printf("\nNext step: we need wake ssh-agent.\n");
-	printf("<eval \"$(ssh-agent -s)\"> - wake command. Send you next messege <Agent pid XXXX(Your PID)>\n");
-	printf("<ssh-add ~/.ssh/id_ed25519> this commang add ssh-key.\n");
+	//printf("<eval \"$(ssh-agent -s)\"> - wake command. Send you next messege <Agent pid XXXX(Your PID)>\n");
+	printf("<ssh-add ~/.ssh/id_ed25519> this commang add ssh-key.\n\n");
+
+	printf("ADD KEY ON GIT HUB");
 	printf("After this you need open git-hub and sign in.\n");
 	printf("Go to \"settings...\"\n");
 	printf("Go to SSH and GPG keys.\n");
 	printf("Push button \"new SSH key\"\n");
-	printf("Next copy your ssh key from path in key-gen command.\n For example: /home/.ssh/id_ed25519.pub\n");
+	printf("Next copy your ssh key from file in key-gen command.\n     For example: gedit ~/.ssh/id_ed25519.pub\n");
 	printf("After save you can try use git push\n");
 }

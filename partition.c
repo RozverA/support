@@ -14,7 +14,7 @@ int prog(int menu)
 			printf("3 - reserv.\n");
 			printf("4 - abbreviare.\n");
 			//printf("51 - define table.\n");
-			printf("5 - cmd block (Login by password).\n");
+			printf("5 - cmd block.\n");
 		break;
 		case menu_c_syn:
 			printf("1 - Byte operations.\n");
@@ -46,6 +46,7 @@ int prog(int menu)
 		case menu_cmd:
 			printf("1 - printf help.\n");
 			printf("2 - help manual compille.\n");
+			printf("3 - HEX to 0xHEX\n");
 			printf("cmd 109 - compille to exe(only on linux).\n");
 			printf("0 - Back to main menu\n");
 		break;
@@ -53,6 +54,7 @@ int prog(int menu)
 		return 1;
 		
 	}
+	printf("\n");
 	scanf("%d",&fork);	
 	return fork;
 }

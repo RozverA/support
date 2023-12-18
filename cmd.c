@@ -1,5 +1,24 @@
 #include "test.h"
 
+void hex_funx()
+{
+	int i = 0;
+	int size = 0;
+	char str[1024];
+	printf("Enter size: ");
+	scanf("%d",&size);
+	size += size;
+	printf("Enter str: ");
+	scanf("%s",str);
+	printf("\nResult:\n");
+	while(i<((size)-2))
+	{
+		printf("0x%c%c,",str[i],str[i+1]);
+		i += 2;
+	}
+	printf("0x%c%c\n",str[i],str[i+1]);
+}
+
 BYTE cmd_menu()
 {
 	switch(prog(menu_cmd))
@@ -14,6 +33,11 @@ BYTE cmd_menu()
 			prt_ln();
 			printf("gcc test.c -o test\n");
 			printf("x86_64-w64-mingw32-gcc -o test.exe test.c\n");
+		break;
+		case 3:
+			prt_ln();
+			printf("rewrite HEX to 0xHEX\n");
+			hex_funx();
 		break;
 		case 109:
 			prt_ln();
